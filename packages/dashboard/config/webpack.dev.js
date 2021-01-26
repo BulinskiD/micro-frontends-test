@@ -20,7 +20,7 @@ const devConfig = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "auth",
+      name: "dashboard",
       filename: "remoteEntry.js",
       exposes: { "./DashboardApp": "./src/bootstrap" },
       shared: packageJSON.dependencies,
